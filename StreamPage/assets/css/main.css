@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    :root{
+        /* all pages */
+        --bgAll : #281150;
+        overflow-x: hidden;
+    }
+    *{
+        padding: 0;
+        margin: 0;
+        overflow-x: hidden;
+        box-sizing: border-box;
+        font-family: iran;
+    }
+    
+    @font-face {
+        font-family: iran ;
+        src: url(../fonts/IRANYEKANMEDIUM.TTF);
+    }
+
+    .center{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    a, h2, p, span, #left-main, #h3-hide{
+        overflow-y:hidden;
+    }
+
+    body{
+        background-image: linear-gradient(to left, #6218d8, #2D1153);
+    }
+
+    input:focus{
+        @apply border-none outline-none text-white;
+    }
+    
+    #all-right-container > section:hover{
+        border-bottom: 2px solid #4885FE;
+        transform:scale(120deg); 
+    }
+
+    #all-right-container > section:hover a{
+        color: white;
+    }
+    #all-right-container > section:hover svg{
+       
+        color: white !important;
+    }
+
+
+
+    #all-right-container > section{
+        padding-bottom: 5px;
+        transition: all 0.3s ease-in;
+    
+    }
+
+    
+
+}
